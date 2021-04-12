@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="nav-left">
+                    <a href="#" id="company-link" title="Chairy">
+                        <img src="images/logo-normal1.png" id="logo-normal" alt="logo">
+                        <img src="images/logo-small1.png" id="logo-small" alt="logo">
+                    </a>
+                </div>
+                <div id="nav-right">
+                    <ul id="nav-right-links">
+                        <li><a href="#">Особенности</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Купить</a></li>
+                    </ul> 
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="introduction">
+                <h1>Фабричные стулья от ведущего производителя</h1>
+                <form method="POST" id="email-form">
+                    <input type="email" id="email-input" placeholder="Введите email адрес">
+                    <button type="submit" id="email-submit" value="Связаться с нами">Связаться с нами</button>
+                </form>
+            </section>
+            <section id="ad-section">
+                <div class="ad" id="ad1">
+                    <img class="ad-icon" src="images/icons/diamond.svg">
+                    <div class="ad-text">
+                        <h2>Премиальные материалы</h2>
+                        <p>Наша продукция создана из лучших, высококачественных материалов</p>
+                    </div>
+                </div>
+                <div class="ad" id="ad2">
+                    <img class="ad-icon" src="images/icons/bus.svg">
+                    <div class="ad-text">
+                        <h2>Быстрая доставка</h2>
+                        <p>Мы позаботимся о том, чтобы вы получили свой заказ как можно раньше. Также мы предоставляем бесплатный возврат товара, если вы неудовлетворены качеством.</p>
+                    </div>
+                </div>
+                <div class="ad" id="ad3">
+                    <img class="ad-icon" src="images/icons/police-hat.svg">
+                    <div class="ad-text">
+                        <h2>Гарантия качества</h2>
+                        <p>У нашего магазина присутствуют все необходимые сертификаты для производства и продажи мебели. </p>
+                    </div>
+                </div>
+            </section>
+            <section id="product-images">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div>1 / 3</div>
+                        <img src="images/folding.webp" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div>2 / 3</div>
+                        <img src="images/soft.webp" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div>3 / 3</div>
+                        <img src="images/armchair.jpg" style="width:100%">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </section>
+            <section id="products-section">
+                <div class="product">
+                    <div class="product-header">
+                        <p>Раскладной стул<p>
+                        <p class="product-price">1349₽</p>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                    <a class="product-button" href="#">Купить</a>
+                </div>
+                <div class="product">
+                    <div class="product-header">
+                        <p>Стул с мягкой седушкой<p>
+                        <p class="product-price">2499₽</p>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                    <a class="product-button" href="#">Купить</a>
+                </div>
+                <div class="product">
+                    <div class="product-header">
+                        <p>Кресло<p>
+                        <p class="product-price">12999₽</p>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                    </ul>
+                    <a class="product-button" href="#">Купить</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <div>
+                    <a href="#">Сертификаты</a>
+                    <a href="#">Правовые документы</a>
+                    <a href="#">Контактная информация</a>
+                </div>
+                <div>
+                    <small>Copyright 2020, Chairy</small>
+                </div>
+            </div>
+            <div id="author-info">
+                <small>Автор веб-страницы: Птушко Богдан.</small>
+            </div>
+        </footer>
+        <script src="script.js">
+        </script>
+    </body>
+</html>

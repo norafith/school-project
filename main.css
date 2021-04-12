@@ -1,0 +1,384 @@
+/*
+Общие стили
+*/
+body {
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    --header-color: #d4d4d4;
+    --main-color: #97c4e5;
+    --bg-color: #fcfdfd;
+    --important-text-color: #69a7d1;
+    --button-color: linear-gradient(45deg, #97cbe5, #97b1e5);
+    --secondary-text-color: #b8b8b8;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+small {
+    color: var(--secondary-text-color);
+}
+/*
+Стили для header и сhildren-ов
+*/
+header {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px var(--header-color) solid;
+    box-shadow: 0 0 5px 3px var(--header-color);
+    z-index: 100000000000000000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 15px;
+    white-space: nowrap;
+}
+
+#nav-left {
+    height: auto;
+}
+
+#nav-right {
+    display: flex;
+    align-items: center;
+}
+
+#company-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#nav-right-links {
+    display: flex;
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+}
+
+#nav-right-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#logo-normal {
+    width: 80px;
+}
+
+#logo-small {
+    display: none;
+}
+/*
+Стили для main
+*/
+main {
+    margin-top: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+/*
+Стили для section-ов
+*/
+section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#introduction {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--important-text-color);
+}
+
+#email-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#email-input {
+    width: 300px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px auto;
+    border: 2px solid var(--main-color);
+}
+
+#email-input:focus {
+    outline: none;
+}
+
+#email-submit {
+    width: 300px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: auto;
+    padding: 7px 10px;
+    color: white;
+    background: var(--button-color);
+    border-radius: 5px;
+    border: none;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+#email-submit:focus {
+    outline: none;
+}
+
+#ad-section {
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    width: 85%;
+}
+
+.ad-icon {
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.ad-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.ad {
+    margin-bottom: 30px;
+}
+.ad h2 {
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    color: var(--important-text-color);
+}
+
+.ad p {
+    margin: 0;
+    margin-left: 15px;
+}
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--important-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: var(--important-text-color);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*
+Стили для блоков с покупками
+*/
+#products-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    position: relative;
+    width: 300px;
+    border: 1px solid black;
+    margin: 10px 10px;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.product-header {
+    background-color: var(--main-color);
+    padding: 10px 0;
+    color: white;
+}
+
+.product p {
+    margin-top: 0;
+    margin: 5px 0; 
+}
+
+.product ul {
+    padding: 0;
+}
+
+.product li {
+    margin: 5px 0;
+    list-style-type: none;
+}
+
+.product-price {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: white;
+}
+
+.product-button {
+    background-color: var(--main-color);
+    padding: 7px 10px;
+    color: white;
+    background: var(--button-color);
+    border-radius: 5px;
+}
+/*
+Стили для footer и сhildren-ов
+*/
+footer {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 0.75em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    margin-right: 10px;
+}
+
+#author-info {
+    display: flex;
+    align-items: flex-end;
+}
+/*
+Media-запросы
+*/
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 15px;
+    }
+
+    footer {
+        display: block;
+    }
+
+    footer a {
+        margin-right: 5px;
+    }
+
+    #logo-normal {
+        display: none;
+    }
+
+    #logo-small {
+        display: block;
+        width: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #nav-right-links {
+        margin-left: 5px;
+    }
+
+    #nav-right-links li {
+        margin-right: 5px;
+    }
+
+
+}
+
+@media screen and (max-width: 350px) {
+    #logo-small {
+        width: 20px;
+    }
+
+    #email-submit, #email-input {
+        width: 250px;
+    }
+
+    nav {
+        margin: 0 5px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    #ad-section {
+        margin: 5px auto;
+    }
+}
